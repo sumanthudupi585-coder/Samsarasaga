@@ -1,5 +1,5 @@
 name = "samsarasaga"
-main = "src/index.mjs"
+main = "index.mjs"
 compatibility_date = "2024-07-25"
 
 [site]
