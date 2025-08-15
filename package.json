@@ -1,0 +1,15 @@
+{
+  "name": "samsarasaga",
+  "version": "1.0.0",
+  "description": "A RAG-based Q&A system using Cloudflare Workers AI",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "node seed.mjs",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.57.2"
+  }
+}
