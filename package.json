@@ -3,14 +3,14 @@
 	"version": "1.0.0",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "npm run build && wrangler dev --site .svelte-kit/cloudflare",
+		"build": "svelte-kit build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-cloudflare": "^4.4.0",
+		"@sveltejs/adapter-cloudflare": "^7.2.0",
 		"@sveltejs/kit": "^2.5.7",
 		"@sveltejs/vite-plugin-svelte": "^3.1.0",
 		"autoprefixer": "^10.4.19",
@@ -27,6 +27,9 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"lucide-svelte": "^0.379.0"
+		"@cloudflare/ai": "^1.0.0",
+		"base64-js": "^1.5.1",
+		"lucide-svelte": "^0.379.0",
+		"mustache": "^4.2.0"
 	}
 }
